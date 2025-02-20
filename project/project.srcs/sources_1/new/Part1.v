@@ -23,12 +23,9 @@
 module Part1(
     input A,
     input B,
-    input C,
-    input D,
-    input E,
-    input F,
     output X,
-    output Y,
-    output Z
+    output Y
     );
+    assign X = A ^ B;
+    assign Y = A & B;
 endmodule

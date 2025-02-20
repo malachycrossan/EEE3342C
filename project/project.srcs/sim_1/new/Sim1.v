@@ -21,20 +21,17 @@
 
 
 module Sim1();
-    parameter NUM_INP = 5;
-    reg A, B, C, D, E;
+    parameter NUM_INP = 2;
+    reg A, B;
     reg[NUM_INP-1:0] cnt; 
-    wire F;
+    wire X, Y;
     integer i;
-    Part_1 UUT(.A(A), .B(B), .C(C), .D(D), .E(E), .F(F));
+    Part1 UUT(.A(A), .B(B), .X(X), .Y(Y));
     initial begin
         cnt = 0;
         for(i = 0; i < 2**NUM_INP; i = i + 1) begin
-            A = cnt[4];
-            B = cnt[3];
-            C = cnt[2];
-            D = cnt[1];
-            E = cnt[0];
+            A = cnt[1];
+            B = cnt[0];
             cnt = cnt + 1;
             #10;
         end
