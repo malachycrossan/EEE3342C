@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1740065197">
-  <File Type="PA-TCL" Name="Part1.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Part1_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="Part1_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Part1.vds"/>
-  <File Type="RDS-UTIL" Name="Part1_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Part1_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Part1.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Part1_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Part1_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1740068711">
+  <File Type="PA-TCL" Name="Part2.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Part2_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Part2_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Part2.vds"/>
+  <File Type="RDS-UTIL" Name="Part2_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Part2_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Part2.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Part2_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Part2_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Part1.v">
@@ -18,9 +18,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/Part2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Part1"/>
+      <Option Name="TopModule" Val="Part2"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -38,9 +45,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
