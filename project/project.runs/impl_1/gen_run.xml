@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1740064250">
-  <File Type="PWROPT-DCP" Name="Part1_pwropt.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1740065202">
+  <File Type="OPT-HWDEF" Name="Part1.hwdef"/>
+  <File Type="PA-DCP" Name="Part1.dcp"/>
+  <File Type="OPT-DCP" Name="Part1_opt.dcp"/>
   <File Type="ROUTE-PWR" Name="Part1_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Part1.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="Part1_power_summary_routed.pb"/>
@@ -8,10 +10,9 @@
   <File Type="BG-DRC" Name="Part1.drc"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="Part1_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="Part1_timing_summary_init.rpt"/>
-  <File Type="OPT-HWDEF" Name="Part1.hwdef"/>
-  <File Type="OPT-DCP" Name="Part1_opt.dcp"/>
   <File Type="OPT-DRC" Name="Part1_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="Part1_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Part1_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="Part1_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="Part1_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="Part1_placed.dcp"/>

@@ -23,9 +23,10 @@
 module Part1(
     input A,
     input B,
+    input C,
     output X,
     output Y
     );
-    assign X = A ^ B;
-    assign Y = A & B;
+    assign X = ((A ^ B) ^ C);
+    assign Y = (A & B)|((A ^ B) & C);
 endmodule

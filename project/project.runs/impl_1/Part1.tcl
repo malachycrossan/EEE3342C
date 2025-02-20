@@ -65,16 +65,13 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  create_project -in_memory -part xc7a35tcpg236-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
+  set_param xicom.use_bs_reader 1
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint C:/Users/ma378458/EEE3342C/project/project.runs/impl_1/Part1.dcp
   set_property webtalk.parent_dir C:/Users/ma378458/EEE3342C/project/project.cache/wt [current_project]
   set_property parent.project_path C:/Users/ma378458/EEE3342C/project/project.xpr [current_project]
   set_property ip_output_repo C:/Users/ma378458/EEE3342C/project/project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/ma378458/EEE3342C/project/project.runs/synth_1/Part1.dcp
-  read_xdc C:/Users/ma378458/EEE3342C/project/project.srcs/constrs_1/new/Constraints1.xdc
-  link_design -top Part1 -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
