@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "ebd0bf551f112a9e",
+    "type": "split",
+    "children": [
+      {
+        "id": "51ab39a332ebc39f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5622ba313468e511",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lab 3 Report.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lab 3 Report"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e7127ca8bf655a27",
+    "type": "split",
+    "children": [
+      {
+        "id": "b4113655559e9c37",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b7221d3c74965e38",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9b24cba3a6632d29",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "504039b4d1c525b0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "39eacded10d7dcec",
+    "type": "split",
+    "children": [
+      {
+        "id": "807eb106b610d3a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6143701f41642aae",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "a25ece20268c12b9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "fae48b8daa65b064",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "27e6fa0294e2bb39",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "5622ba313468e511",
+  "lastOpenFiles": [
+    "Lab 3 Report.pdf",
+    "Screenshot 2025-02-18 110902 2.png",
+    "Screenshot 2025-02-18 110902 1.png",
+    "Screenshot 2025-02-18 110902.png",
+    "Screenshot 2025-02-18 110750.png",
+    "Screenshot 2025-02-18 110648.png",
+    "Screenshot 2025-02-18 104211 2.png",
+    "Screenshot 2025-02-18 104211 1.png",
+    "Screenshot 2025-02-18 104328.png",
+    "Screenshot 2025-02-18 110818 1.png",
+    "Screenshot 2025-02-18 113038.png",
+    "Lab 3 Report.md"
+  ]
+}
