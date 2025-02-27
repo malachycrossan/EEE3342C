@@ -28,20 +28,36 @@ Xilinx's Vivado is an FPGA design, simulation and implementation tool set that a
 <div style="page-break-after: always;"></div>
 
 ## Part 1:
-1. Question 1:
-2. Question 2:
-Deliverables:
+1. 1-bit Half Adder:
+![](Half-Adder-RTL-Code)
+![](half-Adder-Waveform)
+- Verilog RTL of Half Adder
+- Verilog RTL of Full Adder
+- Screenshot of 1-bit Adder waveform of 1’b1 + 1’b1 and 1’b1 + 1’b0
 
+2. 1-bit Full Adder:
+![](Full-Adder-RTL-Code)
+![](Full-Adder-Waveform)
 
 <div style="page-break-after: always;"></div>
 
 ## Part 2:
+![](8-Bit-RCA-RTL-Code)
+![](8-Bit-RCA-Waveform)
 
+Binary: `011001011 + 010101010 = 101110101'
+Hex: `0CB + 0AA = 175'
+Decimal: `203 + 170 = 373`
+- Verilog RTL of 8-bit RCA
+- Screenshot of waveform of 8-bit RCA: 8’b11001011 + 8’b10101010
+- Provide the binary and decimal value of the addition
 
 <div style="page-break-after: always;"></div>
 
 ## Part 3:
-
+- Verilog RTL of 8-bit CLA
+- Screenshot of waveform of 8-bit CLA: 8’b11001011 + 8’b10101010
+- Verify that the RCA and CLA produce the same output
 
 <div style="page-break-after: always;"></div>
 
