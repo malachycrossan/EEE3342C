@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Feb 27 09:23:07 2025
+# Process ID: 32052
+# Current directory: C:/Users/ma378458/EEE3342C/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24440 C:\Users\ma378458\EEE3342C\project\project.xpr
+# Log file: C:/Users/ma378458/EEE3342C/project/vivado.log
+# Journal file: C:/Users/ma378458/EEE3342C/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ma378458/EEE3342C/project/project.xpr
+update_compile_order -fileset sources_1

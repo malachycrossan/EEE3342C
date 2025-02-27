@@ -62,3 +62,4 @@ set_property IOSTANDARD LVCMOS33 [get_ports S4]
 set_property IOSTANDARD LVCMOS33 [get_ports S5]
 set_property IOSTANDARD LVCMOS33 [get_ports S6]
 set_property IOSTANDARD LVCMOS33 [get_ports S7]
+

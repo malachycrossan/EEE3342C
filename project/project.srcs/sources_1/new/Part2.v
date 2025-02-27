@@ -49,12 +49,12 @@ module Part2(
     output Cout
     );
     wire C0, C1, C2, C3, C4, C5, C6;
-    Part1 Adder0(A0, B0, Cin, S0, C0);
-    Part1 Adder1(A1, B1, C0, S1, C1);
-    Part1 Adder2(A2, B2, C1, S2, C2);
-    Part1 Adder3(A3, B3, C2, S3, C3);
-    Part1 Adder4(A4, B4, C3, S4, C4);
-    Part1 Adder5(A5, B5, C4, S5, C5);
-    Part1 Adder6(A6, B6, C5, S6, C6);
-    Part1 Adder7(A7, B7, C6, S7, Cout);
+    //Part1 Adder0(A0, B0, Cin, S0, C0);
+    //Part1 Adder1(A1, B1, C0, S1, C1);
+    //Part1 Adder2(A2, B2, C1, S2, C2);
+    //Part1 Adder3(A3, B3, C2, S3, C3);
+    //Part1 Adder4(A4, B4, C3, S4, C4);
+    //Part1 Adder5(A5, B5, C4, S5, C5);
+    //Part1 Adder6(A6, B6, C5, S6, C6);
+    //Part1 Adder7(A7, B7, C6, S7, Cout);
 endmodule
