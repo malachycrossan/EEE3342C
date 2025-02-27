@@ -2,3 +2,5 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ma378458/EEE3342C/project/
 INFO: [VRFC 10-311] analyzing module Part1
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Sim1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Sim1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

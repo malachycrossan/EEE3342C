@@ -22,7 +22,7 @@
 
 module Part1(
     input A,
-    input B,
+    input B, 
     input C,
     output X,
     output Y
