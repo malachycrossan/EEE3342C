@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1740065197">
-  <File Type="PA-TCL" Name="Part1.tcl"/>
-  <File Type="REPORTS-TCL" Name="Part1_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Part1.vds"/>
-  <File Type="RDS-UTIL" Name="Part1_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Part1_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Part1.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1740674877">
+  <File Type="PA-TCL" Name="CLA.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="CLA_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="CLA_reports.tcl"/>
+  <File Type="RDS-RDS" Name="CLA.vds"/>
+  <File Type="RDS-UTIL" Name="CLA_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="CLA_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="CLA.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="CLA_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="CLA_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Part1.v">
@@ -15,9 +18,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/CLA.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Part1"/>
+      <Option Name="TopModule" Val="CLA"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
