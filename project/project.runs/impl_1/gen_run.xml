@@ -1,65 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1740674877">
-  <File Type="PWROPT-DCP" Name="CLA_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="CLA_power_routed.rpt"/>
   <File Type="PA-TCL" Name="CLA.tcl"/>
+  <File Type="PWROPT-DCP" Name="CLA_pwropt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="CLA_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="CLA_reports.tcl"/>
   <File Type="BG-DRC" Name="CLA.drc"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="CLA_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="CLA_timing_summary_init.rpt"/>
   <File Type="OPT-HWDEF" Name="CLA.hwdef"/>
   <File Type="OPT-DCP" Name="CLA_opt.dcp"/>
   <File Type="OPT-DRC" Name="CLA_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="CLA_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="CLA_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="CLA_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="CLA_placed.dcp"/>
   <File Type="PLACE-IO" Name="CLA_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="CLA_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="CLA_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="CLA_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="CLA_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="CLA_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="CLA_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="CLA_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="CLA_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="CLA_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="CLA_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="CLA_drc_physopted.rpt"/>
   <File Type="BG-BIT" Name="CLA.bit"/>
-  <File Type="PHYSOPT-TIMING" Name="CLA_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="CLA_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="CLA_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="CLA_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="CLA_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="CLA_drc_routed.pb"/>
-  <File Type="BITSTR-MSK" Name="CLA.msk"/>
   <File Type="ROUTE-DRC-RPX" Name="CLA_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="CLA.bgn"/>
+  <File Type="BITSTR-MSK" Name="CLA.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="CLA_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-RBT" Name="CLA.rbt"/>
+  <File Type="BG-BGN" Name="CLA.bgn"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CLA_methodology_drc_routed.rpx"/>
-  <File Type="BG-BIN" Name="CLA.bin"/>
+  <File Type="BITSTR-RBT" Name="CLA.rbt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CLA_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="CLA.bin"/>
   <File Type="ROUTE-PWR-RPX" Name="CLA_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="CLA_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="CLA_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="CLA_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="CLA_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="CLA_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="CLA_incremental_reuse_routed.rpt"/>
-  <File Type="RDI-RDI" Name="CLA.vdi"/>
   <File Type="ROUTE-CLK" Name="CLA_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="CLA.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="CLA_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CLA_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CLA_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CLA_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CLA_timing_summary_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="CLA.nky"/>
   <File Type="BITSTR-BMM" Name="CLA_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="CLA.mmi"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="CLA.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="CLA.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>

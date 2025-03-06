@@ -21,20 +21,14 @@
 
 
 module Sim1();
-    parameter NUM_INP = 3;
-    reg A, B, C;
-    reg[NUM_INP-1:0] cnt; 
-    wire X, Y;
-    integer i;
-    Part1 UUT(.A(A), .B(B), .C(C), .X(X), .Y(Y));
+    reg[31:0] A, B;
+    reg Ctrl;
+    wire[31:0] S;
+    wire Cout;
+    CLA UUT(.A(A), .B(B), .Ctrl(Ctrl), .S(S), .Cout(Cout));
     initial begin
-        cnt = 0;
-        for(i = 0; i < 2**NUM_INP; i = i + 1) begin
-            A = cnt[2];
-            B = cnt[1];
-            C = cnt[0];
-            cnt = cnt + 1;
-            #10;
-        end
+        Ctrl = 0;
+        A = 32'b00010110101101011001010010111011;
+        B = 32'b00000101011010100011000000111010;
     end
 endmodule

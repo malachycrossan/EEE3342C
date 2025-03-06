@@ -2,17 +2,10 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-<<<<<<< Updated upstream
 # Start of session at: Thu Feb 27 10:44:28 2025
 # Process ID: 20628
 # Current directory: C:/Users/ma378458/EEE3342C/project
 # Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30144 C:\Users\ma378458\EEE3342C\project\project.xpr
-=======
-# Start of session at: Thu Mar  6 09:20:58 2025
-# Process ID: 25848
-# Current directory: C:/Users/ma378458/EEE3342C/project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30616 C:\Users\ma378458\EEE3342C\project\project.xpr
->>>>>>> Stashed changes
 # Log file: C:/Users/ma378458/EEE3342C/project/vivado.log
 # Journal file: C:/Users/ma378458/EEE3342C/project\vivado.jou
 #-----------------------------------------------------------
@@ -24,7 +17,6 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
 update_compile_order -fileset sources_1
-<<<<<<< Updated upstream
 close [ open C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/CLA.v w ]
 add_files C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/CLA.v
 update_compile_order -fileset sources_1
@@ -134,15 +126,12 @@ INFO: [Common 17-344] 'xsim' was cancelled
 INFO: [Vivado 12-5357] 'simulate' step aborted
 launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1120.609 ; gain = 0.000
 INFO: [Common 17-344] 'launch_simulation' was cancelled
-=======
->>>>>>> Stashed changes
 synth_design -rtl -name rtl_1
 Command: synth_design -rtl -name rtl_1
 Starting synth_design
 Using part: xc7a35tcpg236-1
 Top: CLA
 ---------------------------------------------------------------------------------
-<<<<<<< Updated upstream
 Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1120.609 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'CLA' [C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/CLA.v:23]
@@ -159,15 +148,6 @@ WARNING: [Synth 8-350] instance 'Full_Adder' of module 'Part1' requires 5 connec
 INFO: [Synth 8-256] done synthesizing module 'CLA' (2#1) [C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/CLA.v:23]
 ---------------------------------------------------------------------------------
 Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1120.609 ; gain = 0.000
-=======
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 945.719 ; gain = 68.828
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Part2' [C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part2.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Part2' (1#1) [C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part2.v:23]
-WARNING: [Synth 8-3330] design Part2 has an empty top module
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 975.199 ; gain = 98.309
->>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -177,11 +157,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-<<<<<<< Updated upstream
 Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1120.609 ; gain = 0.000
-=======
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 975.199 ; gain = 98.309
->>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -216,7 +192,6 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-<<<<<<< Updated upstream
 RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1469.688 ; gain = 349.078
 8 Infos, 14 Warnings, 8 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
@@ -310,12 +285,3 @@ close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
 INFO: [Common 17-206] Exiting Vivado at Thu Feb 27 11:52:56 2025...
-=======
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1389.398 ; gain = 512.508
-6 Infos, 11 Warnings, 10 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1389.398 ; gain = 512.508
-close_design
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu Mar  6 09:23:35 2025...
->>>>>>> Stashed changes
