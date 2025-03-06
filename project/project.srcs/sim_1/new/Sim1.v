@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Sim1();
+/*module Sim1();
     parameter NUM_INP = 5;
     reg A, B, C, D, E;
     reg[NUM_INP-1:0] cnt; 
@@ -39,4 +39,4 @@ module Sim1();
             #10;
         end
     end
-endmodule
+endmodule*/

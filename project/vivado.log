@@ -1,0 +1,438 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Mar  6 10:29:20 2025
+# Process ID: 31036
+# Current directory: C:/Users/ma378458/EEE3342C/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32876 C:\Users\ma378458\EEE3342C\project\project.xpr
+# Log file: C:/Users/ma378458/EEE3342C/project/vivado.log
+# Journal file: C:/Users/ma378458/EEE3342C/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ma378458/EEE3342C/project/project.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/ma378458/EEE3342C/project/project.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 92f6e52886f74c84833584099fe256bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim1_behav xil_defaultlib.Sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <Part_1> not found while processing module instance <UUT> [C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Sim1.v:29]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Part1
+ERROR: [Synth 8-2576] procedural assignment to a non-register F is not permitted [C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part1.v:32]
+ERROR: [Synth 8-2576] procedural assignment to a non-register F is not permitted [C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part1.v:33]
+ERROR: [Synth 8-2576] procedural assignment to a non-register F is not permitted [C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part1.v:34]
+INFO: [Synth 8-2350] module Part1 ignored due to previous errors [C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part1.v:23]
+Failed to read verilog 'C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part1.v'
+1 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+close [ open C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part2.v w ]
+add_files C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part2.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part3.v w ]
+add_files C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part3.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part4.v w ]
+add_files C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part4.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part2_Sim.v w ]
+add_files -fileset sim_1 C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part2_Sim.v
+close [ open C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part4_Sim.v w ]
+add_files -fileset sim_1 C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part4_Sim.v
+close [ open C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part3_Sim.v w ]
+add_files -fileset sim_1 C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part3_Sim.v
+close [ open C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part1_Sim.v w ]
+add_files -fileset sim_1 C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part1_Sim.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part2_Sim.v]
+set_property is_enabled false [get_files  C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part4_Sim.v]
+set_property is_enabled false [get_files  C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part3_Sim.v]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Part1_Sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Part1_Sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Part1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part1_Sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Part1_Sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 92f6e52886f74c84833584099fe256bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Part1_Sim_behav xil_defaultlib.Part1_Sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Part1
+Compiling module xil_defaultlib.Part1_Sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Part1_Sim_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim/xsim.dir/Part1_Sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar  6 11:20:17 2025...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Part1_Sim_behav -key {Behavioral:sim_1:Functional:Part1_Sim} -tclbatch {Part1_Sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source Part1_Sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Part1_Sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 982.461 ; gain = 10.578
+set_property is_enabled true [get_files  C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part2_Sim.v]
+set_property is_enabled false [get_files  C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part1_Sim.v]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Part2_Sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Part2_Sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Part2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part2_Sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Part2_Sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 92f6e52886f74c84833584099fe256bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Part2_Sim_behav xil_defaultlib.Part2_Sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Part2
+Compiling module xil_defaultlib.Part2_Sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Part2_Sim_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim/xsim.dir/Part2_Sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar  6 11:23:44 2025...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Part2_Sim_behav -key {Behavioral:sim_1:Functional:Part2_Sim} -tclbatch {Part2_Sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source Part2_Sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Part2_Sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property is_enabled true [get_files  C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part3_Sim.v]
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part2_Sim.v]
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Part3_Sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Part3_Sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Part3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part3_Sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Part3_Sim
+INFO: [VRFC 10-2458] undeclared symbol B, assumed default net type wire [C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part3_Sim.v:8]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 92f6e52886f74c84833584099fe256bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Part3_Sim_behav xil_defaultlib.Part3_Sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port B on this module [C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part3_Sim.v:8]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Part3_Sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Part3_Sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Part3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part3_Sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Part3_Sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 92f6e52886f74c84833584099fe256bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Part3_Sim_behav xil_defaultlib.Part3_Sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Part3
+Compiling module xil_defaultlib.Part3_Sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Part3_Sim_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim/xsim.dir/Part3_Sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar  6 11:28:36 2025...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ma378458/EEE3342C/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Part3_Sim_behav -key {Behavioral:sim_1:Functional:Part3_Sim} -tclbatch {Part3_Sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source Part3_Sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Part3_Sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs synth_1 -jobs 12
+[Thu Mar  6 11:30:17 2025] Launched synth_1...
+Run output will be captured here: C:/Users/ma378458/EEE3342C/project/project.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Thu Mar  6 11:30:42 2025] Launched impl_1...
+Run output will be captured here: C:/Users/ma378458/EEE3342C/project/project.runs/impl_1/runme.log
+set_property is_enabled false [get_files  C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part3_Sim.v]
+set_property is_enabled true [get_files  C:/Users/ma378458/EEE3342C/project/project.srcs/sim_1/new/Part4_Sim.v]
+open_hw
+close_hw
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1279.871 ; gain = 0.199
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1279.871 ; gain = 0.199
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1421.090 ; gain = 422.707
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property is_enabled false [get_files  C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part1.v]
+set_property is_enabled false [get_files  C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part2.v]
+set_property is_enabled false [get_files  C:/Users/ma378458/EEE3342C/project/project.srcs/sources_1/new/Part4.v]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+[Thu Mar  6 11:33:17 2025] Launched synth_1...
+Run output will be captured here: C:/Users/ma378458/EEE3342C/project/project.runs/synth_1/runme.log
+[Thu Mar  6 11:33:17 2025] Launched impl_1...
+Run output will be captured here: C:/Users/ma378458/EEE3342C/project/project.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1859.363 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1859.363 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+place_ports {A[7]} R2
+place_ports {A[6]} T1
+place_ports {A[5]} U1
+place_ports {A[4]} W2
+place_ports {A[3]} R3
+place_ports {A[2]} T2
+place_ports {A[1]} T3
+place_ports {A[0]} V2
+place_ports {S[1]} V16
+startgroup
+set_property package_pin "" [get_ports [list  F]]
+place_ports {S[0]} V17
+endgroup
+place_ports F U16
+set_property is_loc_fixed true [get_ports [list  {S[2]}]]
+file mkdir C:/Users/ma378458/EEE3342C/project/project.srcs/constrs_1/new
+close [ open C:/Users/ma378458/EEE3342C/project/project.srcs/constrs_1/new/Contraints3.xdc w ]
+add_files -fileset constrs_1 C:/Users/ma378458/EEE3342C/project/project.srcs/constrs_1/new/Contraints3.xdc
+set_property target_constrs_file C:/Users/ma378458/EEE3342C/project/project.srcs/constrs_1/new/Contraints3.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Mar  6 11:38:27 2025] Launched synth_1...
+Run output will be captured here: C:/Users/ma378458/EEE3342C/project/project.runs/synth_1/runme.log
+[Thu Mar  6 11:38:27 2025] Launched impl_1...
+Run output will be captured here: C:/Users/ma378458/EEE3342C/project/project.runs/impl_1/runme.log
+set_property IOSTANDARD LVCMOS33 [get_ports [list {A[7]} {A[6]} {A[5]} {A[4]} {A[3]} {A[2]} {A[1]} {A[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {A[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {A[7]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {S[2]} {S[1]} {S[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list F]]
+save_constraints -force
+ERROR: [Common 17-53] User Exception: A file was added to constraint set constrs_1 after the  implementation design was open. Doing "Save Constraints" will overwrite these files. Use "Save Constraints As" to avoid losing any data on disk.
+open_hw
+close_hw
+save_constraints -force
+ERROR: [Common 17-53] User Exception: A file was added to constraint set constrs_1 after the  implementation design was open. Doing "Save Constraints" will overwrite these files. Use "Save Constraints As" to avoid losing any data on disk.
+save_constraints -force
+ERROR: [Common 17-53] User Exception: A file was added to constraint set constrs_1 after the  implementation design was open. Doing "Save Constraints" will overwrite these files. Use "Save Constraints As" to avoid losing any data on disk.
+save_constraints_as constrs_2
+set_property constrset constrs_2 [get_runs synth_1]
+set_property constrset constrs_2 [get_runs impl_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Mar  6 11:40:26 2025] Launched synth_1...
+Run output will be captured here: C:/Users/ma378458/EEE3342C/project/project.runs/synth_1/runme.log
+[Thu Mar  6 11:40:26 2025] Launched impl_1...
+Run output will be captured here: C:/Users/ma378458/EEE3342C/project/project.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A380DBA
+set_property PROGRAM.FILE {C:/Users/ma378458/EEE3342C/project/project.runs/impl_1/Part3.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ma378458/EEE3342C/project/project.runs/impl_1/Part3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  6 11:43:23 2025...

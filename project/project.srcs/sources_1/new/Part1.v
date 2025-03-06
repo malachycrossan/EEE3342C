@@ -19,16 +19,19 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+// 2-1 Mux
 module Part1(
-    input A,
-    input B,
-    input C,
-    input D,
-    input E,
-    input F,
-    output X,
-    output Y,
-    output Z
+    input wire A,
+    input wire B,
+    input wire S,
+    output reg F
     );
+    always@(*)begin
+        F = 1'b0;
+        case(S)
+            1'b0: F = A;
+            1'b1: F = B;
+            default: F = 1'b0;
+        endcase
+    end
 endmodule
