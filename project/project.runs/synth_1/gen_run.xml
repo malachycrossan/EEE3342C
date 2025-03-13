@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1741279226">
-  <File Type="PA-TCL" Name="Part3.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Part3_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="Part3_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Part3.vds"/>
-  <File Type="RDS-UTIL" Name="Part3_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Part3_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Part3.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Part3_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Part3_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1741880988">
+  <File Type="PA-TCL" Name="Part5.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Part5_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Part5_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Part5.vds"/>
+  <File Type="RDS-UTIL" Name="Part5_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Part5_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Part5.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Part5_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Part5_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/print_seg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Part5.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Part4.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/Part3.v">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -34,17 +57,9 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Part4.v">
-      <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Part3"/>
+      <Option Name="TopModule" Val="Part5"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
