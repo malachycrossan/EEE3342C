@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Mar 27 11:45:01 2025
+# Process ID: 24064
+# Current directory: C:/Users/ma378458/EEE3342C/project/project.runs/synth_1
+# Command line: vivado.exe -log Part1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Part1.tcl
+# Log file: C:/Users/ma378458/EEE3342C/project/project.runs/synth_1/Part1.vds
+# Journal file: C:/Users/ma378458/EEE3342C/project/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Part1.tcl -notrace

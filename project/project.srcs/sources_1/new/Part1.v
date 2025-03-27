@@ -19,16 +19,15 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+// Non-gated SR-Latch
 module Part1(
-    input A,
-    input B,
-    input C,
-    input D,
-    input E,
-    input F,
-    output X,
-    output Y,
-    output Z
+    input S,
+    input R,
+    output reg Q,
+    output reg Q_Prime
     );
+    always@(*)begin
+        Q = ~(S | Q_Prime);
+        Q_Prime = ~(R | Q);
+    end
 endmodule

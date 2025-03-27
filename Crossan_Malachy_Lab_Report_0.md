@@ -1,21 +1,32 @@
-# Crossan Malachy Lab Report 0
-## Experiment 0
+# Crossan Malachy Lab Report 6
+## Experiment 6
 
 Xilinx FPGA Tools
 Digital Systems Lab
 EEE3342C-0014
 
-**Experiment conducted:** Jan 1st 2025
-**Report submitted:** Jan 1st 2025
+**Experiment conducted:** Mar 27th 2025
+**Report submitted:** Apr 4th 2025
+
 <div style="page-break-after: always;"></div>
 
 ### Objective
 `A brief but complete statement of what you intend to design or verify  
-in the experiment should be at the beginning of each experiment.  `
+in the experiment should be at the beginning of each experiment.`
 
 ### Equipment:
 - Xilinx's FPGA VIVADO HLx Editions design tools on the laboratory computer. www.xilinx.com
 - BASYS Development board
+
+### Design steps
+1. Create new module for each part
+2. Write the RTL code
+3. Test using simulation code
+4. Complete IO Configuration
+5. Generate Bitstream
+6. Program BASYS 3 FPGA Board
+7. Test
+8. Repeat steps 1-7
 
 <div style="page-break-after: always;"></div>
 
