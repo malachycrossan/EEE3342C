@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Mar 27 11:45:31 2025
-# Process ID: 35780
+# Start of session at: Thu Apr  3 10:10:22 2025
+# Process ID: 26324
 # Current directory: C:/Users/ma378458/EEE3342C/project/project.runs/impl_1
-# Command line: vivado.exe -log Part1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Part1.tcl -notrace
-# Log file: C:/Users/ma378458/EEE3342C/project/project.runs/impl_1/Part1.vdi
+# Command line: vivado.exe -log part1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source part1.tcl -notrace
+# Log file: C:/Users/ma378458/EEE3342C/project/project.runs/impl_1/part1.vdi
 # Journal file: C:/Users/ma378458/EEE3342C/project/project.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source Part1.tcl -notrace
+source part1.tcl -notrace

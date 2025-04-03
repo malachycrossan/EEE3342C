@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Apr  3 11:34:20 2025
+# Process ID: 5220
+# Current directory: C:/Users/ma378458/EEE3342C/Lab6/Lab6.runs/synth_1
+# Command line: vivado.exe -log d_latch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source d_latch.tcl
+# Log file: C:/Users/ma378458/EEE3342C/Lab6/Lab6.runs/synth_1/d_latch.vds
+# Journal file: C:/Users/ma378458/EEE3342C/Lab6/Lab6.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source d_latch.tcl -notrace

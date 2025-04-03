@@ -60,15 +60,12 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param xicom.use_bs_reader 1
-  set_param synth.incrementalSynthesisCache C:/Users/ma378458/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-7464-CECS5NSHRY3/incrSyn
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
@@ -76,9 +73,9 @@ set rc [catch {
   set_property parent.project_path C:/Users/ma378458/EEE3342C/project/project.xpr [current_project]
   set_property ip_output_repo C:/Users/ma378458/EEE3342C/project/project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/ma378458/EEE3342C/project/project.runs/synth_1/Part1.dcp
+  add_files -quiet C:/Users/ma378458/EEE3342C/project/project.runs/synth_1/part1.dcp
   read_xdc C:/Users/ma378458/EEE3342C/project/project.srcs/constrs_2/new/Constraints_1.xdc
-  link_design -top Part1 -part xc7a35tcpg236-1
+  link_design -top part1 -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -94,8 +91,8 @@ set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
   opt_design 
-  write_checkpoint -force Part1_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file Part1_drc_opted.rpt -pb Part1_drc_opted.pb -rpx Part1_drc_opted.rpx"
+  write_checkpoint -force part1_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file part1_drc_opted.rpt -pb part1_drc_opted.pb -rpx part1_drc_opted.rpx"
   close_msg_db -file opt_design.pb
 } RESULT]
 if {$rc} {
@@ -112,10 +109,10 @@ set rc [catch {
   create_msg_db place_design.pb
   implement_debug_core 
   place_design 
-  write_checkpoint -force Part1_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file Part1_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file Part1_utilization_placed.rpt -pb Part1_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file Part1_control_sets_placed.rpt"
+  write_checkpoint -force part1_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file part1_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file part1_utilization_placed.rpt -pb part1_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file part1_control_sets_placed.rpt"
   close_msg_db -file place_design.pb
 } RESULT]
 if {$rc} {
@@ -131,18 +128,18 @@ set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
   route_design 
-  write_checkpoint -force Part1_routed.dcp
-  create_report "impl_1_route_report_drc_0" "report_drc -file Part1_drc_routed.rpt -pb Part1_drc_routed.pb -rpx Part1_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file Part1_methodology_drc_routed.rpt -pb Part1_methodology_drc_routed.pb -rpx Part1_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file Part1_power_routed.rpt -pb Part1_power_summary_routed.pb -rpx Part1_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file Part1_route_status.rpt -pb Part1_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file Part1_timing_summary_routed.rpt -rpx Part1_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file Part1_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file Part1_clock_utilization_routed.rpt"
+  write_checkpoint -force part1_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file part1_drc_routed.rpt -pb part1_drc_routed.pb -rpx part1_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file part1_methodology_drc_routed.rpt -pb part1_methodology_drc_routed.pb -rpx part1_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file part1_power_routed.rpt -pb part1_power_summary_routed.pb -rpx part1_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file part1_route_status.rpt -pb part1_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file part1_timing_summary_routed.rpt -rpx part1_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file part1_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file part1_clock_utilization_routed.rpt"
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
-  write_checkpoint -force Part1_routed_error.dcp
+  write_checkpoint -force part1_routed_error.dcp
   step_failed route_design
   return -code error $RESULT
 } else {
@@ -154,10 +151,10 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  catch { write_mem_info -force Part1.mmi }
-  write_bitstream -force Part1.bit 
-  catch {write_debug_probes -quiet -force Part1}
-  catch {file copy -force Part1.ltx debug_nets.ltx}
+  catch { write_mem_info -force part1.mmi }
+  write_bitstream -force part1.bit 
+  catch {write_debug_probes -quiet -force part1}
+  catch {file copy -force part1.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {

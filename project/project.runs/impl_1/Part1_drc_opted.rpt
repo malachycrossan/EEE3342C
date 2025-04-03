@@ -1,10 +1,10 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Mar 27 11:45:44 2025
+| Date         : Thu Apr  3 10:10:34 2025
 | Host         : CECS5NSHRY3 running 64-bit major release  (build 9200)
-| Command      : report_drc -file Part1_drc_opted.rpt -pb Part1_drc_opted.pb -rpx Part1_drc_opted.rpx
-| Design       : Part1
+| Command      : report_drc -file part1_drc_opted.rpt -pb part1_drc_opted.pb -rpx part1_drc_opted.rpx
+| Design       : part1
 | Device       : xc7a35tcpg236-1
 | Speed File   : -1
 | Design State : Synthesized
@@ -24,12 +24,11 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 2
+             Violations found: 1
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| LUTLP-2  | Warning  | Combinatorial Loop Allowed                          | 1          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -45,11 +44,6 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
-Related violations: <none>
-
-LUTLP-2#1 Warning
-Combinatorial Loop Allowed  
-1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: Q_OBUF_inst_i_1.
 Related violations: <none>
 
 

@@ -1,10 +1,10 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Mar 27 11:45:55 2025
+| Date         : Thu Apr  3 10:10:44 2025
 | Host         : CECS5NSHRY3 running 64-bit major release  (build 9200)
-| Command      : report_methodology -file Part1_methodology_drc_routed.rpt -pb Part1_methodology_drc_routed.pb -rpx Part1_methodology_drc_routed.rpx
-| Design       : Part1
+| Command      : report_methodology -file part1_methodology_drc_routed.rpt -pb part1_methodology_drc_routed.pb -rpx part1_methodology_drc_routed.rpx
+| Design       : part1
 | Device       : xc7a35tcpg236-1
 | Speed File   : -1
 | Design State : Routed
@@ -24,17 +24,17 @@ Table of Contents
       Design limits: <entire design considered>
              Max violations: <unlimited>
              Violations found: 1
-+-----------+----------+--------------------------+------------+
-| Rule      | Severity | Description              | Violations |
-+-----------+----------+--------------------------+------------+
-| TIMING-23 | Warning  | Combinational loop found | 1          |
-+-----------+----------+--------------------------+------------+
++-----------+----------+-------------------+------------+
+| Rule      | Severity | Description       | Violations |
++-----------+----------+-------------------+------------+
+| TIMING-20 | Warning  | Non-clocked latch | 1          |
++-----------+----------+-------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-TIMING-23#1 Warning
-Combinational loop found  
-A timing loop has been detected on a combinational path. A timing arc has been disabled between Q_OBUF_inst_i_1/I1 and Q_OBUF_inst_i_1/O to disable the timing loop
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch Q_reg cannot be properly analyzed as its control pin Q_reg/G is not reached by a timing clock
 Related violations: <none>
 
 

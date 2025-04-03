@@ -17,9 +17,6 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
-set_param synth.incrementalSynthesisCache C:/Users/ma378458/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-7464-CECS5NSHRY3/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -44,10 +41,10 @@ read_xdc C:/Users/ma378458/EEE3342C/project/project.srcs/constrs_2/new/Constrain
 set_property used_in_implementation false [get_files C:/Users/ma378458/EEE3342C/project/project.srcs/constrs_2/new/Constraints_1.xdc]
 
 
-synth_design -top Part1 -part xc7a35tcpg236-1
+synth_design -top part1 -part xc7a35tcpg236-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef Part1.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file Part1_utilization_synth.rpt -pb Part1_utilization_synth.pb"
+write_checkpoint -force -noxdef part1.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file part1_utilization_synth.rpt -pb part1_utilization_synth.pb"
